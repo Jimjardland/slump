@@ -1,0 +1,11 @@
+version: "2"
+services:
+  public:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/www
+    tty: true
+    environment:
+      - PORT=8080
