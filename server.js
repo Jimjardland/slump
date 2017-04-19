@@ -4,7 +4,15 @@ import http from 'http';
 const router = express.Router();
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello world again!!'));
+const randomize = (arr) => {
+	return arr[Math.floor(Math.random()*arr.length)];
+};
+
+
+app.get('/items', (req, res) => res.send(randomize(['a', 'b', 'c', 'd'])));
+app.get('/', (req, res) => res.send(randomize((req.query.items.split(','))));
+
+
 
 
 const server = http.createServer(app);
