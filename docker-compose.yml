@@ -3,13 +3,13 @@ services:
   public:
     build: .
     ports:
-      - "8080:8080"
+      - "9000:9000"
     volumes:
       - .:/www
       - /www/node_modules
     tty: true
     environment:
-      - PORT=8080
+      - PORT=9000
   mongo:
     image: mongo
     ports:
