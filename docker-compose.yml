@@ -10,6 +10,7 @@ services:
     tty: true
     environment:
       - PORT=9000
+      - VIRTUAL_HOST=slumpsy.com
   mongo:
     image: mongo
     ports:
