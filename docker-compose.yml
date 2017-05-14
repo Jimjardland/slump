@@ -9,7 +9,7 @@ services:
       - /www/node_modules
     tty: true
     expose:
-      -"8080"
+      - "8080"
     environment:
       - PORT=8080
       - VIRTUAL_HOST=slumpsy.com
