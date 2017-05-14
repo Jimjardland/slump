@@ -24,6 +24,7 @@
     "babel-register": "^6.18.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongoose": "^4.9.9",
     "random-words": "0.0.1"
   }
 }
